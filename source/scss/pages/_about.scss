@@ -1,0 +1,88 @@
+.content_about {
+	position: absolute;
+	bottom: 30px;
+	height: 65px;
+	width: 330px;
+	background: rgba(72, 152, 174, 0.65);
+	.about_seven {
+		color: $white;
+	    text-transform: capitalize;
+	    line-height: 34px;
+	    margin: 14px 10px;
+	    text-align: center;
+	    font-size: 34px;
+	}
+}
+
+ .our_miss {
+ 	margin-top: 40px;
+ }
+ #accordion.accordion {
+ 	width: 100%;
+ 	padding: 0;
+ 	margin: 50px auto 20px;
+ 	li { list-style: none;}
+	 	.link {
+	 		text-transform: uppercase;
+			cursor: pointer;
+			display: block;
+			padding: 15px 15px 15px 42px;
+			color: #73abbb;
+			font-size: 20px;
+			font-weight: 300;
+			border-top: 2px solid #d2cdc9;
+			position: relative;
+			transition: all 0.4s ease;
+		}
+ }
+#accordion.accordion li:last-child .link {
+	border-bottom: 0;
+}
+#accordion.accordion li.open .link {
+	color: $pink;
+}
+#accordion.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 12px;
+	color: #595959;
+	transition: all 0.4s ease;
+}
+
+#accordion.accordion li i.fa-chevron-left {
+	left: 12px;
+	right: auto;
+	font-size: 16px;
+	top: 21px;
+}
+
+#accordion.accordion li.open i.fa-chevron-left {
+	transform: rotate(-90deg);
+}
+
+#accordion.accordion li.default .submenu {display: block;}
+/**
+ * Submenu
+ -----------------------------*/
+#accordion.accordion .submenu {
+ 	display: none;
+ 	background: #444359;
+ 	font-size: 14px;
+ 	li {
+ 		border-bottom: 1px solid #4b4a5e;
+ 		list-style: none;
+ 		a {
+		 	display: block;
+		 	text-decoration: none;
+		 	color: #d9d9d9;
+		 	padding: 12px;
+		 	padding-left: 42px;
+		 	text-transform: uppercase;
+		 	transition: all 0.25s ease;
+		 	&:hover {
+		 		background: #b63b4d;
+ 				color: #FFF;
+		 	}
+		 }
+ 	}
+ }

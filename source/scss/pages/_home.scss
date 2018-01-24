@@ -1,0 +1,139 @@
+.main {
+	background-color: $gray_sky;
+	padding-bottom: 50px;
+	.box_model {
+		position: relative;
+		padding-top: 30px;
+		a.box {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		.box_detail {
+			.title_box {
+				position: absolute;
+				right: 22px;
+				bottom: 46px;
+				font-size: 45px;
+				text-transform: uppercase;
+		    	text-align: center;
+		    	text-shadow: 1px 1px 1px $gray_shadow_txt;
+		    	color: $white;
+		    	font-weight: bold;
+			}
+			.read_stories {
+				text-decoration: none;
+				color: $white;
+			    font-size: 16px;
+			    position: absolute;
+			    right: 15px;
+			    bottom: 0;
+			    padding: 11px;
+			    span {
+			    	padding-left: 12px;
+			    }
+			}
+			.club_color_1 {
+				background: rgba(72,152,174, 0.6);
+				&:hover {
+					background: rgba(84,107,43, 0.6);
+				}
+			}
+			.club_color_2 {
+				background: rgba(84,107,43, 0.6);
+				&:hover {
+					background: rgba(229,124,107, 0.6);
+				}
+			}
+			.club_color_3 {
+				background: rgba(229,124,107, 0.6);
+				&:hover {
+					background: rgba(72,152,174, 0.6);
+				}
+			}
+ 		}
+	}
+	.family {
+		.read_family {
+			color: $pink;
+			font-size: 14px;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:hover {
+				color: $sky_blue;
+			}
+		}
+		.media_family {
+			position: relative;
+			border-top: 1px solid $gray_border;
+			padding-top: 20px;
+			.date {
+				font-size: 32px;
+				color: $green;
+				text-transform: uppercase;
+				margin: 0;
+				line-height: 30px;
+			}
+			span.month {
+				color: $green;
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+			.body_family {
+				padding-left: 20px;
+				.family_title {
+					color: $pink_sky;
+					font-size: 17px;
+				}
+				p {
+					color: $gray_color;
+				}
+			}
+			.btn_more {
+				text-decoration: none;
+				position: absolute;
+				top: 24px;
+				right: 10px;
+				padding: 6px 24px;
+				border-radius: 5px;
+				background-color: $sky_blue;
+				color: $white;
+				text-transform: uppercase;
+				font-size: 16px;
+				&:hover {
+					background-color: $pink;
+				    transition: all 0.5s linear;
+				}
+			}
+		}
+		p {
+			color: $gray_color;
+		}
+	}
+}
+
+@media (max-width: 991px)  {
+	.main {
+		.box_model  { 
+			a.box {
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+		.family {
+			.family_title {
+				font-size: 16px;
+			}
+			.media_family  {
+				.btn_more {
+					padding: 6px 18px;
+					top: 22px;
+					right: 0;
+				}
+			}
+		}
+	}
+}

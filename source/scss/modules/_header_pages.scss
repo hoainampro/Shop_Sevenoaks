@@ -1,60 +1,5 @@
 #header {
 	position: relative;
-	#carousel-example-generic {
-		position: relative;
-		.carousel-control.left,
-		.carousel-control.right {
-			background-image: none;
-		}
-		.carousel-control.left,
-		.carousel-control.right {
-			width: 2%;
-		}
-		span.fa-chevron-left {
-			padding-right: 10px;
-		}
-		span.fa-chevron-right {
-			padding-left: 10px;
-		}
-		span.fa-chevron-left,
-		span.fa-chevron-right {
-			width: 50px;
-			height: 90px;
-			background-color: #5d5d5c;
-			padding-top: 32px;
-		}
-		.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev,
-		.carousel-control .glyphicon-chevron-right {
-    		margin-left: -13px;
-		}
-		.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    		margin-right: -12px;
-		}
-		.carousel-control {
-		    position: absolute;
-    		top: -50px;
-		}
-		.content_slider {
-			background: rgba(72,152,174,0.65);
-			width: 520px;
-			max-width: 520px;
-			height: 156px; 
-			display: inline-block;
-			position: absolute;
-			left: 105px;
-    		bottom: 30px;
-    		padding-left: 28px;
-    		padding-top: 10px;
-    		span {
-    			font-weight: bold;
-    		}
-			h4 {
-				font-size: 34px;
-				color: $white;
-			}
-		}
-	}
-
 	.top_header {
 		position: relative;
 		top: 0;
@@ -66,6 +11,8 @@
 			margin-left: auto; 
 			margin-right: auto; 
 			.content-top {
+				margin: 0;
+				padding: 0;
 				background-color: $white;
 				.logo {
 					margin-top: 40px;
@@ -151,7 +98,6 @@
 					padding: 10px 17px;
 					font-size: 27px;
 				}
-
 			}
 			#search.open {
 				transform: translate(0px, 0px) scale(1, 1); 
@@ -335,18 +281,6 @@
  }
 }
 
-
-@media (max-width: 1024px) {
-	#header {
-		#carousel-example-generic {
-			.content_slider {
-				h4 {
-					font-size: 30px;
-				}
-			}
-		}
-	}
-}
 @media (max-width: 991px) {
 
 	#header {

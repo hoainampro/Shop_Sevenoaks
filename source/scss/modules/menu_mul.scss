@@ -1,0 +1,162 @@
+.menu_bar {
+	float: right;
+	cursor: pointer;
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+	    height: 5px;
+	    background-color: #f0f0f0;;
+	    margin: 6px 0;
+	    transition: 0.4s;
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+.mobile-menu {
+	display: none;
+	width: 100%;
+	padding: 11px;
+	background-color: #3e4156;
+	color: $white;
+	text-transform: uppercase;
+	font-weight: 600;
+	height: 58px;
+	line-height: 36px;
+	.change {
+		.bar1 {
+			transform: rotate(-45deg) translate(-9px, 6px);
+		}
+		.bar2 {
+			opacity: 0;
+		}
+		.bar3 {
+			transform: rotate(45deg) translate(-8px, -8px);
+		}
+	}
+	&:hover {
+		background-color: #3e4156;
+		color: $white;
+		text-decoration: none;
+	}
+}
+.menu {
+	display: block;
+	background-color: #0c0c0c;
+	
+	li {
+		display: inline-block;
+		position: relative;
+		z-index: 100;
+		a {
+			font-size: 15px;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 12px;
+			display: block;
+			color: $white;
+			transition: all 0.2s ease-in-out 0s;
+			&:hover {
+				color: $white;
+				background:#9ca3da;
+			}
+		}
+		&:hover {
+			a {
+				color: $white;
+				background-color: #9ca3da;
+			}
+			//sub_menu_hover
+			ul {
+				display: block;
+			}
+		}
+	}
+	//sub_menu
+	ul {
+		display: none;
+		margin: 0;
+		padding: 0;
+		width: 150px;
+		position: absolute;
+		top: 43px;
+		left: 0px;
+		background-color: $white;
+		ul {
+			left: 149px;
+			top: 0;
+		}
+		li {
+			display: block;
+			float: none;
+			background-color: none;
+			margin: 0;
+			padding: 0;
+			a {
+				font-size: 12px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: normal;
+				display: block;
+				color: #797979;
+				border-left: 3px solid $white;
+				background-color: $white;	
+				&:hover {
+					background-color: #f0f0f0;
+					border-left: 3px solid #9da3da;
+					color: #797979;
+				}
+			}
+			&:hover {
+				a {
+					background-color: #f0f0f0;
+					border-left: 3px solid #9da3da;
+					color: #797979;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.mobile-menu {
+		display: block;
+		color: #000;
+	}
+	nav {
+		margin: 0;
+		.menu {
+			margin: 0;
+			padding: 0;
+			display: none;
+			ul.sub-menu {
+				display: none;
+				position: relative;
+				top: 0;
+				left: 0;
+				width: 100%;
+				ul {
+					left: 0;
+				}
+			}
+			li {
+				display: block;
+				margin: 0;
+				a {
+					background-color: #ccc;
+					color: #797979;
+					border-top: 1px solid #e0e0e0;
+					border-left: 3px solid $white;
+				}
+				&:hover {
+					a {
+						background-color: #f0f0f0;
+						color: #797979;
+						border-left: 3px solid #9ca3da;
+					}
+				}
+			}
+		}
+	}
+	
+}
